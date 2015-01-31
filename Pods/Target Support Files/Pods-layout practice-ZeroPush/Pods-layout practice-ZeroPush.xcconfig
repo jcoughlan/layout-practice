@@ -1,0 +1,1 @@
+PODS_LAYOUT_PRACTICE_ZEROPUSH_OTHER_LDFLAGS = -framework "Foundation" -framework "UIKit"
