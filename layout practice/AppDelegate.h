@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import <ZeroPush.h>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, ZeroPushDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
