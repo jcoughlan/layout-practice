@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BKSFeatureManager.h"
 @interface AppDelegate ()
 
 @end
@@ -36,10 +36,9 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [ZeroPush engageWithAPIKey:@"iosdev_qGWyxZ1GpyrWyo7DF3Gz" delegate:self];
-    
-    //now ask the user if they want to recieve push notifications. You can place this in another part of your app.
-    [[ZeroPush shared] registerForRemoteNotifications];
+    [[BKSFeatureManager sharedManager] enableZeroPushNotificationWithKey:@"iosdev_qGWyxZ1GpyrWyo7DF3Gz" andDelegate:self];
+    [[BKSFeatureManager sharedManager] enableCoreData];
+    [[BKSFeatureManager sharedManager] enableGoogleAnalyticsWithKey:@"UA-59197069-1"];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

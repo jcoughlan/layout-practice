@@ -1,10 +1,15 @@
 PODS:
+  - GoogleAnalytics-iOS-SDK (3.10):
+    - GoogleAnalytics-iOS-SDK/Core (= 3.10)
+  - GoogleAnalytics-iOS-SDK/Core (3.10)
   - ZeroPush (2.0.4)
 
 DEPENDENCIES:
+  - GoogleAnalytics-iOS-SDK (~> 3.0)
   - ZeroPush (~> 2.0)
 
 SPEC CHECKSUMS:
+  GoogleAnalytics-iOS-SDK: f422062075d9ccb1ea8d783fc5ba3829461e9502
   ZeroPush: c90562f54d7db07c948f89b23f1a447f61f0041b
 
 COCOAPODS: 0.35.0
