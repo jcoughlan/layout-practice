@@ -27,6 +27,7 @@
     usesPushNotifications = NO;
     usesGoogleAnalytics = NO;
     usesCoreData = NO;
+    usesSlidingMenu = YES;
     return self;
 }
 -(void) enableZeroPushNotificationWithKey:(NSString*)key andDelegate:(id)delegate
@@ -37,10 +38,16 @@
     [[ZeroPush shared] registerForRemoteNotifications];
     usesPushNotifications = YES;
 }
+
 -(void) enableCoreData
 {
-    
+    usesCoreData = YES;
 }
+-(void) enableSlidingMenu
+{
+    usesSlidingMenu = YES;
+}
+
 -(void) enableGoogleAnalyticsWithKey:(NSString*)key
 {
     [GAI sharedInstance].trackUncaughtExceptions = YES;
@@ -53,5 +60,21 @@
     
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:key];
+    
+    usesGoogleAnalytics = YES;
+}
+
+-(void)zeroPushNotificationSuccess:(NSData*)data
+{
+    // Call the convenience method registerDeviceToken, this helps us track device tokens for you
+    [[ZeroPush shared] registerDeviceToken:data];
+    
+    // This would be a good time to save the token and associate it with a user that you want to notify later.
+   // NSString *tokenString = [ZeroPush deviceTokenFromData:data];
+}
+
+-(void)zeroPushNotificationFail:(NSError *)error
+{
+    NSLog(@"Error registering for push notifications %@", [error description]);
 }
 @end

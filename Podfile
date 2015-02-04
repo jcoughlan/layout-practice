@@ -4,11 +4,8 @@
 
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0'
 pod 'ZeroPush', '~> 2.0'
+pod 'ECSlidingViewController', '~> 2.0.3'
 target 'BKS base project' do
-
-end
-
-target 'BKS base projectTests' do
 
 end
 

@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */; };
+		1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943641A82B901007C0CB0 /* MEMenuViewController.m */; };
+		1A0943671A82B922007C0CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0943661A82B922007C0CB0 /* Main.storyboard */; };
 		1AAACC961A7D7556008C8DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC951A7D7556008C8DD1 /* main.m */; };
 		1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC981A7D7556008C8DD1 /* AppDelegate.m */; };
 		1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */; };
-		1AAACC9F1A7D7556008C8DD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9E1A7D7556008C8DD1 /* ViewController.m */; };
-		1AAACCA21A7D7556008C8DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAACCA01A7D7556008C8DD1 /* Main.storyboard */; };
 		1AAACCA41A7D7556008C8DD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAACCA31A7D7556008C8DD1 /* Images.xcassets */; };
 		1AAACCA71A7D7556008C8DD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAACCA51A7D7556008C8DD1 /* LaunchScreen.xib */; };
 		AB5200485669ECBBB7F211AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F34548E9E2740013C41BBE0 /* libPods.a */; };
@@ -21,15 +21,15 @@
 /* Begin PBXFileReference section */
 		1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSFeatureManager.h; sourceTree = "<group>"; };
 		1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSFeatureManager.m; sourceTree = "<group>"; };
+		1A0943631A82B901007C0CB0 /* MEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMenuViewController.h; sourceTree = "<group>"; };
+		1A0943641A82B901007C0CB0 /* MEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMenuViewController.m; sourceTree = "<group>"; };
+		1A0943661A82B922007C0CB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1AAACC901A7D7556008C8DD1 /* BKS base project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BKS base project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAACC941A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AAACC971A7D7556008C8DD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AAACC981A7D7556008C8DD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AAACC9B1A7D7556008C8DD1 /* layout_practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = layout_practice.xcdatamodel; sourceTree = "<group>"; };
-		1AAACC9D1A7D7556008C8DD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AAACC9E1A7D7556008C8DD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1AAACCA11A7D7556008C8DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AAACCA31A7D7556008C8DD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AAACCA61A7D7556008C8DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1AAACCB11A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,13 +81,13 @@
 		1AAACC921A7D7556008C8DD1 /* BKS base project */ = {
 			isa = PBXGroup;
 			children = (
+				1A0943631A82B901007C0CB0 /* MEMenuViewController.h */,
+				1A0943641A82B901007C0CB0 /* MEMenuViewController.m */,
 				1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */,
 				1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */,
 				1AAACC971A7D7556008C8DD1 /* AppDelegate.h */,
 				1AAACC981A7D7556008C8DD1 /* AppDelegate.m */,
-				1AAACC9D1A7D7556008C8DD1 /* ViewController.h */,
-				1AAACC9E1A7D7556008C8DD1 /* ViewController.m */,
-				1AAACCA01A7D7556008C8DD1 /* Main.storyboard */,
+				1A0943661A82B922007C0CB0 /* Main.storyboard */,
 				1AAACCA31A7D7556008C8DD1 /* Images.xcassets */,
 				1AAACCA51A7D7556008C8DD1 /* LaunchScreen.xib */,
 				1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */,
@@ -193,7 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAACCA21A7D7556008C8DD1 /* Main.storyboard in Resources */,
+				1A0943671A82B922007C0CB0 /* Main.storyboard in Resources */,
 				1AAACCA71A7D7556008C8DD1 /* LaunchScreen.xib in Resources */,
 				1AAACCA41A7D7556008C8DD1 /* Images.xcassets in Resources */,
 			);
@@ -270,7 +270,7 @@
 				1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */,
 				1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
-				1AAACC9F1A7D7556008C8DD1 /* ViewController.m in Sources */,
+				1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */,
 				1AAACC961A7D7556008C8DD1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,14 +278,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1AAACCA01A7D7556008C8DD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AAACCA11A7D7556008C8DD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1AAACCA51A7D7556008C8DD1 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

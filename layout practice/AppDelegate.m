@@ -49,12 +49,7 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)tokenData
 {
-    // Call the convenience method registerDeviceToken, this helps us track device tokens for you
-    [[ZeroPush shared] registerDeviceToken:tokenData];
-    
-    // This would be a good time to save the token and associate it with a user that you want to notify later.
-    NSString *tokenString = [ZeroPush deviceTokenFromData:tokenData];
-    NSLog(@"%@", tokenString);
+    [[BKSFeatureManager sharedManager] zeroPushNotificationSuccess:tokenData];
     
     // For instance you can associate it with a user's email address
     // [[ZeroPush shared] subscribeToChannel:@"user@example.com"];
@@ -64,7 +59,8 @@
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
 {
-    NSLog(@"%@", [error description]);
+    [[BKSFeatureManager sharedManager] zeroPushNotificationFail:error];
+    //NSLog(@"%@", [error description]);
     //Common reason for errors:
     //  1.) Simulator does not support receiving push notifications
     //  2.) User rejected push alert

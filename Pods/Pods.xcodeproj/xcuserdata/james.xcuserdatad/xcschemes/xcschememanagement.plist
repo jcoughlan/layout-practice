@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-BKS base project-ECSlidingViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BKS base project-GoogleAnalytics-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BKS base project-ZeroPush.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BKS base project.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ECSlidingViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GoogleAnalytics-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ZeroPush.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>02C864EE58089DAF80D1399F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23F257C5CA19FB889D5AAC45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6124F0985CC6C3C4D94378B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A36160BA29DB373A4FA841EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A49FB1E3409111D434F7E4A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD9BE533C8F6C27EE8F19FEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7F93FE465894B966DAD27E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAF2A0FD5C4E7C1CA6D600C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
