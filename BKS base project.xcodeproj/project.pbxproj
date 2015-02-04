@@ -10,6 +10,9 @@
 		1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */; };
 		1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943641A82B901007C0CB0 /* MEMenuViewController.m */; };
 		1A0943671A82B922007C0CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0943661A82B922007C0CB0 /* Main.storyboard */; };
+		1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943691A82BCD3007C0CB0 /* MapViewController.m */; };
+		1A09436E1A82C530007C0CB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A09436D1A82C530007C0CB0 /* MapKit.framework */; };
+		1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943711A82C59F007C0CB0 /* BKSMapView.m */; };
 		1AAACC961A7D7556008C8DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC951A7D7556008C8DD1 /* main.m */; };
 		1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC981A7D7556008C8DD1 /* AppDelegate.m */; };
 		1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */; };
@@ -24,6 +27,11 @@
 		1A0943631A82B901007C0CB0 /* MEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMenuViewController.h; sourceTree = "<group>"; };
 		1A0943641A82B901007C0CB0 /* MEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMenuViewController.m; sourceTree = "<group>"; };
 		1A0943661A82B922007C0CB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A0943681A82BCD3007C0CB0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		1A0943691A82BCD3007C0CB0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		1A09436D1A82C530007C0CB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1A0943701A82C59F007C0CB0 /* BKSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSMapView.h; sourceTree = "<group>"; };
+		1A0943711A82C59F007C0CB0 /* BKSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSMapView.m; sourceTree = "<group>"; };
 		1AAACC901A7D7556008C8DD1 /* BKS base project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BKS base project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAACC941A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A09436E1A82C530007C0CB0 /* MapKit.framework in Frameworks */,
 				AB5200485669ECBBB7F211AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,9 +63,39 @@
 		0E664DF59D7825BCAA814756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A09436D1A82C530007C0CB0 /* MapKit.framework */,
 				6F34548E9E2740013C41BBE0 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A09436B1A82BCDB007C0CB0 /* BKS View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A0943631A82B901007C0CB0 /* MEMenuViewController.h */,
+				1A0943641A82B901007C0CB0 /* MEMenuViewController.m */,
+				1A0943681A82BCD3007C0CB0 /* MapViewController.h */,
+				1A0943691A82BCD3007C0CB0 /* MapViewController.m */,
+			);
+			name = "BKS View Controller";
+			sourceTree = "<group>";
+		};
+		1A09436C1A82BD1E007C0CB0 /* BKS Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */,
+				1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */,
+			);
+			name = "BKS Managers";
+			sourceTree = "<group>";
+		};
+		1A09436F1A82C539007C0CB0 /* BKS View */ = {
+			isa = PBXGroup;
+			children = (
+				1A0943701A82C59F007C0CB0 /* BKSMapView.h */,
+				1A0943711A82C59F007C0CB0 /* BKSMapView.m */,
+			);
+			name = "BKS View";
 			sourceTree = "<group>";
 		};
 		1AAACC871A7D7556008C8DD1 = {
@@ -81,10 +120,9 @@
 		1AAACC921A7D7556008C8DD1 /* BKS base project */ = {
 			isa = PBXGroup;
 			children = (
-				1A0943631A82B901007C0CB0 /* MEMenuViewController.h */,
-				1A0943641A82B901007C0CB0 /* MEMenuViewController.m */,
-				1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */,
-				1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */,
+				1A09436F1A82C539007C0CB0 /* BKS View */,
+				1A09436C1A82BD1E007C0CB0 /* BKS Managers */,
+				1A09436B1A82BCDB007C0CB0 /* BKS View Controller */,
 				1AAACC971A7D7556008C8DD1 /* AppDelegate.h */,
 				1AAACC981A7D7556008C8DD1 /* AppDelegate.m */,
 				1A0943661A82B922007C0CB0 /* Main.storyboard */,
@@ -270,8 +308,10 @@
 				1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */,
 				1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
+				1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */,
 				1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */,
 				1AAACC961A7D7556008C8DD1 /* main.m in Sources */,
+				1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
