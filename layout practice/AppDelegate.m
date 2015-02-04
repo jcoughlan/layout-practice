@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BKSFeatureManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -36,9 +37,11 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[BKSFeatureManager sharedManager] enableRegularLogging];
+    [[BKSFeatureManager sharedManager] enableFileLogging];
     [[BKSFeatureManager sharedManager] enableZeroPushNotificationWithKey:@"iosdev_qGWyxZ1GpyrWyo7DF3Gz" andDelegate:self];
     [[BKSFeatureManager sharedManager] enableCoreData];
-    [[BKSFeatureManager sharedManager] enableGoogleAnalyticsWithKey:@"UA-59197069-1"];
+    [[BKSFeatureManager sharedManager] enableGoogleAnalyticsWithKey:@"UA-59197069-1" withLogging:NO];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

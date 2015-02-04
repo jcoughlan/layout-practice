@@ -32,6 +32,7 @@
 		1A09436D1A82C530007C0CB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1A0943701A82C59F007C0CB0 /* BKSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSMapView.h; sourceTree = "<group>"; };
 		1A0943711A82C59F007C0CB0 /* BKSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSMapView.m; sourceTree = "<group>"; };
+		1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-CocoaLumberjack.a"; path = "Pods/build/Debug-iphoneos/libPods-CocoaLumberjack.a"; sourceTree = "<group>"; };
 		1AAACC901A7D7556008C8DD1 /* BKS base project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BKS base project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAACC941A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		0E664DF59D7825BCAA814756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */,
 				1A09436D1A82C530007C0CB0 /* MapKit.framework */,
 				6F34548E9E2740013C41BBE0 /* libPods.a */,
 			);
@@ -413,6 +415,10 @@
 				INFOPLIST_FILE = "layout practice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "BKS base project";
 			};
 			name = Debug;
@@ -425,6 +431,10 @@
 				INFOPLIST_FILE = "layout practice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "BKS base project";
 			};
 			name = Release;

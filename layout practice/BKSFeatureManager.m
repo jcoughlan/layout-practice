@@ -9,6 +9,12 @@
 #import "BKSFeatureManager.h"
 #import <ZeroPush.h>
 #import <GAI.h>
+#import <DDLog.h>
+#import <DDASLLogger.h>
+#import <DDTTYLogger.h>
+#import <DDFileLogger.h>
+#import <CocoaLumberjack.h>
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @implementation BKSFeatureManager
 
@@ -48,7 +54,7 @@
     usesSlidingMenu = YES;
 }
 
--(void) enableGoogleAnalyticsWithKey:(NSString*)key
+-(void) enableGoogleAnalyticsWithKey:(NSString*)key withLogging:(BOOL)logging
 {
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
@@ -56,8 +62,11 @@
     [GAI sharedInstance].dispatchInterval = 20;
     
     // Optional: set Logger to VERBOSE for debug information.
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-    
+    if(logging)
+        [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    else
+        [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelNone];
+
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:key];
     
@@ -70,11 +79,38 @@
     [[ZeroPush shared] registerDeviceToken:data];
     
     // This would be a good time to save the token and associate it with a user that you want to notify later.
-   // NSString *tokenString = [ZeroPush deviceTokenFromData:data];
+    // NSString *tokenString = [ZeroPush deviceTokenFromData:data];
 }
 
 -(void)zeroPushNotificationFail:(NSError *)error
 {
-    NSLog(@"Error registering for push notifications %@", [error description]);
+    DDLogError(@"Error registering for push notifications %@", [error description]);
+}
+
+-(void)enableRegularLogging
+{
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    //    // Convert from this:
+    //    NSLog(@"Broken sprocket detected!");
+    //    NSLog(@"User selected file:%@ withSize:%u", filePath, fileSize);
+    //
+    //    // To this:
+    //    DDLogError(@"Broken sprocket detected!");
+    //    DDLogVerbose(@"User selected file:%@ withSize:%u", filePath, fileSize);
+    //   DDLogError
+    // DDLogWarn
+    // DDLogInfo
+    // DDLogDebug
+    // DDLogVerbose
+}
+
+-(void)enableFileLogging
+{
+    DDFileLogger* fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 ; // 1 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 1;
+    
+    [DDLog addLogger:fileLogger];
 }
 @end

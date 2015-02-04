@@ -21,7 +21,9 @@
 -(void) enableZeroPushNotificationWithKey:(NSString*)key andDelegate:(id)delegate;
 -(void) enableCoreData;
 -(void) enableSlidingMenu;
--(void) enableGoogleAnalyticsWithKey:(NSString*)key;
+-(void) enableGoogleAnalyticsWithKey:(NSString*)key withLogging:(BOOL)logging;
+-(void) enableRegularLogging;
+-(void) enableFileLogging;
 
 -(void)zeroPushNotificationSuccess:(NSData*)data;
 -(void)zeroPushNotificationFail:(NSError *)error;

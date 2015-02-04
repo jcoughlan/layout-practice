@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D7F93FE465894B966DAD27E0"
+               BlueprintIdentifier = "16280938714FDB9E49F33D47"
                BuildableName = "libPods-BKS base project-ZeroPush.a"
                BlueprintName = "Pods-BKS base project-ZeroPush"
                ReferencedContainer = "container:Pods.xcodeproj">
