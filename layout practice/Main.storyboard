@@ -12,6 +12,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="separatorColor" red="0.55898206760000002" green="0.80577497119999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.82847239658739225" green="0.38548566509235727" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="ndH-yJ-uSP">
                                 <cells>
@@ -75,6 +78,26 @@
                                             <segue destination="BZ7-Oq-XCT" kind="custom" customClass="ECSlidingSegue" id="Du5-Wr-sVU"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="HF6-TT-snQ" style="IBUITableViewCellStyleDefault" id="pTC-TN-HoZ">
+                                        <rect key="frame" x="0.0" y="79" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTC-TN-HoZ" id="xQV-AZ-9Or">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HF6-TT-snQ">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aka-hA-JzG" kind="custom" customClass="ECSlidingSegue" id="Ds0-tM-AIh"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -136,6 +159,49 @@
                 <exit id="r6P-dc-cIu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="796" y="2253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uNC-yD-HIp">
+            <objects>
+                <navigationController id="aka-hA-JzG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ttL-ci-53Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bHQ-3Z-XGf" kind="relationship" relationship="rootViewController" id="gAd-mX-okD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEr-3G-tSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="2918"/>
+        </scene>
+        <!--GL View Controller-->
+        <scene sceneID="47p-G3-NL5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPv-ED-Boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ptk-LM-xpE" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController id="bHQ-3Z-XGf" userLabel="GL View Controller" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uny-iF-yVl"/>
+                        <viewControllerLayoutGuide type="bottom" id="YFO-6h-QQq"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="ggt-R6-fTq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </glkView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="OPEN GL View" id="mzo-BY-kbY">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="2M5-hT-wB7">
+                            <connections>
+                                <segue destination="ptk-LM-xpE" kind="unwind" unwindAction="unwindToMenuViewController:" id="H0W-hM-r0f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="797" y="2920"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bks-qE-5VU">
@@ -246,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izB-To-1hj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="701"/>
+            <point key="canvasLocation" x="1236" y="542"/>
         </scene>
         <!--Sliding View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -287,6 +353,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83h-tr-CwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="894"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lVu-zL-k26">
+            <objects>
+                <viewController id="AfJ-R3-NDj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7HX-tV-jY3"/>
+                        <viewControllerLayoutGuide type="bottom" id="KjC-WZ-wbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="you-BE-uAH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSe-Mv-yu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

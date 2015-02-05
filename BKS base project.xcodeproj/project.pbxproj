@@ -15,6 +15,12 @@
 		1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943711A82C59F007C0CB0 /* BKSMapView.m */; };
 		1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB31A8406FB008159AF /* PopoverViewController.m */; };
 		1A720AB71A840730008159AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB61A840730008159AF /* HomeViewController.m */; };
+		1A720ABC1A841169008159AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A720ABB1A841169008159AF /* GLKit.framework */; };
+		1A720AC11A841315008159AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A720AC01A841315008159AF /* OpenGLES.framework */; };
+		1A720AC31A841320008159AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A720AC21A841320008159AF /* QuartzCore.framework */; };
+		1A720AFF1A8413E2008159AF /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1A720AFD1A8413E2008159AF /* Shader.fsh */; };
+		1A720B001A8413E2008159AF /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1A720AFE1A8413E2008159AF /* Shader.vsh */; };
+		1A720B391A841414008159AF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720B381A841414008159AF /* GameViewController.m */; };
 		1AAACC961A7D7556008C8DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC951A7D7556008C8DD1 /* main.m */; };
 		1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC981A7D7556008C8DD1 /* AppDelegate.m */; };
 		1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */; };
@@ -39,6 +45,13 @@
 		1A720AB31A8406FB008159AF /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 		1A720AB51A840730008159AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1A720AB61A840730008159AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1A720ABB1A841169008159AF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1A720AC01A841315008159AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1A720AC21A841320008159AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1A720AFD1A8413E2008159AF /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		1A720AFE1A8413E2008159AF /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		1A720B371A841414008159AF /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		1A720B381A841414008159AF /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		1AAACC901A7D7556008C8DD1 /* BKS base project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BKS base project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAACC941A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A720AC31A841320008159AF /* QuartzCore.framework in Frameworks */,
+				1A720AC11A841315008159AF /* OpenGLES.framework in Frameworks */,
+				1A720ABC1A841169008159AF /* GLKit.framework in Frameworks */,
 				1A09436E1A82C530007C0CB0 /* MapKit.framework in Frameworks */,
 				AB5200485669ECBBB7F211AB /* libPods.a in Frameworks */,
 			);
@@ -70,6 +86,9 @@
 		0E664DF59D7825BCAA814756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A720AC21A841320008159AF /* QuartzCore.framework */,
+				1A720AC01A841315008159AF /* OpenGLES.framework */,
+				1A720ABB1A841169008159AF /* GLKit.framework */,
 				1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */,
 				1A09436D1A82C530007C0CB0 /* MapKit.framework */,
 				6F34548E9E2740013C41BBE0 /* libPods.a */,
@@ -80,6 +99,8 @@
 		1A09436B1A82BCDB007C0CB0 /* BKS View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A720B371A841414008159AF /* GameViewController.h */,
+				1A720B381A841414008159AF /* GameViewController.m */,
 				1A0943631A82B901007C0CB0 /* MEMenuViewController.h */,
 				1A0943641A82B901007C0CB0 /* MEMenuViewController.m */,
 				1A0943681A82BCD3007C0CB0 /* MapViewController.h */,
@@ -110,6 +131,23 @@
 			name = "BKS View";
 			sourceTree = "<group>";
 		};
+		1A720B3A1A84141B008159AF /* BKS OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				1A720B3B1A841427008159AF /* Shaders */,
+			);
+			name = "BKS OpenGL";
+			sourceTree = "<group>";
+		};
+		1A720B3B1A841427008159AF /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				1A720AFD1A8413E2008159AF /* Shader.fsh */,
+				1A720AFE1A8413E2008159AF /* Shader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
 		1AAACC871A7D7556008C8DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +170,7 @@
 		1AAACC921A7D7556008C8DD1 /* BKS base project */ = {
 			isa = PBXGroup;
 			children = (
+				1A720B3A1A84141B008159AF /* BKS OpenGL */,
 				1A09436F1A82C539007C0CB0 /* BKS View */,
 				1A09436C1A82BD1E007C0CB0 /* BKS Managers */,
 				1A09436B1A82BCDB007C0CB0 /* BKS View Controller */,
@@ -243,9 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A720AFF1A8413E2008159AF /* Shader.fsh in Resources */,
 				1A0943671A82B922007C0CB0 /* Main.storyboard in Resources */,
 				1AAACCA71A7D7556008C8DD1 /* LaunchScreen.xib in Resources */,
 				1AAACCA41A7D7556008C8DD1 /* Images.xcassets in Resources */,
+				1A720B001A8413E2008159AF /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A720B391A841414008159AF /* GameViewController.m in Sources */,
 				1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */,
 				1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
