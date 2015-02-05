@@ -15,6 +15,7 @@
     BOOL usesGoogleAnalytics;
     BOOL usesSlidingMenu;
 }
+
 + (BKSFeatureManager*)sharedManager;
 -(id)init;
 

@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK_Core 10
 #define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK_Core 0
 
+// WYPopoverController
+#define COCOAPODS_POD_AVAILABLE_WYPopoverController
+#define COCOAPODS_VERSION_MAJOR_WYPopoverController 0
+#define COCOAPODS_VERSION_MINOR_WYPopoverController 2
+#define COCOAPODS_VERSION_PATCH_WYPopoverController 2
+
 // ZeroPush
 #define COCOAPODS_POD_AVAILABLE_ZeroPush
 #define COCOAPODS_VERSION_MAJOR_ZeroPush 2

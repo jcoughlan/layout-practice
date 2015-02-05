@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BKS base project-WYPopoverController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BKS base project-ZeroPush.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-WYPopoverController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ZeroPush.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0038863511CBB0B29299EEBE</key>
+		<key>022FF61E4D33219597BAC1A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>05EC63F6271BE77AAF604C1B</key>
+		<key>14F7849144FD4DFE82F2B51C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0633866E9B2FAD325A91D09C</key>
+		<key>186ED80721177D0D5E2DAC9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1017C155C57F82FC238B9E99</key>
+		<key>1B2CE147DB9ADF8F9B643B9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16280938714FDB9E49F33D47</key>
+		<key>1BA4574BAEE08AAA65BF929D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A7132D81487ABE94825CB80</key>
+		<key>32C58E05F85A697A38A3731D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EA7913C7C5FE9D05D19FAB8</key>
+		<key>6AA1C76A892D06B7E35A1B6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92956B7D1C1E3468E8C7DBD9</key>
+		<key>72EB018E1429C3D9F95CF0DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC0508D4B3994E0CD590C0CB</key>
+		<key>AA076137905002321C53F0FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E530C306B66ECCA0F52C039B</key>
+		<key>CB81FF6790FD391B2DFC5C38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E62A38EDA347B97D5F52FAF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F19FFD01474A5D6DD011DFCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

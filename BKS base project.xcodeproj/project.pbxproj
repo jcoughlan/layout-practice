@@ -13,6 +13,8 @@
 		1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943691A82BCD3007C0CB0 /* MapViewController.m */; };
 		1A09436E1A82C530007C0CB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A09436D1A82C530007C0CB0 /* MapKit.framework */; };
 		1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943711A82C59F007C0CB0 /* BKSMapView.m */; };
+		1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB31A8406FB008159AF /* PopoverViewController.m */; };
+		1A720AB71A840730008159AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB61A840730008159AF /* HomeViewController.m */; };
 		1AAACC961A7D7556008C8DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC951A7D7556008C8DD1 /* main.m */; };
 		1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC981A7D7556008C8DD1 /* AppDelegate.m */; };
 		1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */; };
@@ -33,6 +35,10 @@
 		1A0943701A82C59F007C0CB0 /* BKSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSMapView.h; sourceTree = "<group>"; };
 		1A0943711A82C59F007C0CB0 /* BKSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSMapView.m; sourceTree = "<group>"; };
 		1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-CocoaLumberjack.a"; path = "Pods/build/Debug-iphoneos/libPods-CocoaLumberjack.a"; sourceTree = "<group>"; };
+		1A720AB21A8406FB008159AF /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		1A720AB31A8406FB008159AF /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
+		1A720AB51A840730008159AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1A720AB61A840730008159AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1AAACC901A7D7556008C8DD1 /* BKS base project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BKS base project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAACC941A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 				1A0943641A82B901007C0CB0 /* MEMenuViewController.m */,
 				1A0943681A82BCD3007C0CB0 /* MapViewController.h */,
 				1A0943691A82BCD3007C0CB0 /* MapViewController.m */,
+				1A720AB21A8406FB008159AF /* PopoverViewController.h */,
+				1A720AB31A8406FB008159AF /* PopoverViewController.m */,
+				1A720AB51A840730008159AF /* HomeViewController.h */,
+				1A720AB61A840730008159AF /* HomeViewController.m */,
 			);
 			name = "BKS View Controller";
 			sourceTree = "<group>";
@@ -311,6 +321,8 @@
 				1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
 				1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */,
+				1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */,
+				1A720AB71A840730008159AF /* HomeViewController.m in Sources */,
 				1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */,
 				1AAACC961A7D7556008C8DD1 /* main.m in Sources */,
 				1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */,
