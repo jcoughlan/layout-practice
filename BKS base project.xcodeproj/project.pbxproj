@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */; };
 		1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943641A82B901007C0CB0 /* MEMenuViewController.m */; };
 		1A0943671A82B922007C0CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0943661A82B922007C0CB0 /* Main.storyboard */; };
 		1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943691A82BCD3007C0CB0 /* MapViewController.m */; };
 		1A09436E1A82C530007C0CB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A09436D1A82C530007C0CB0 /* MapKit.framework */; };
 		1A0943721A82C59F007C0CB0 /* BKSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0943711A82C59F007C0CB0 /* BKSMapView.m */; };
+		1A252F561A87C4F7006C5276 /* BKSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F511A87C4F7006C5276 /* BKSCoreDataManager.m */; };
+		1A252F571A87C4F7006C5276 /* IAThreadSafeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F531A87C4F7006C5276 /* IAThreadSafeContext.m */; };
+		1A252F581A87C4F7006C5276 /* IAThreadSafeManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F551A87C4F7006C5276 /* IAThreadSafeManagedObject.m */; };
+		1A252F5A1A87C651006C5276 /* BKSFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F591A87C651006C5276 /* BKSFeatureManager.m */; };
+		1A252F601A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F5E1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld */; };
 		1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB31A8406FB008159AF /* PopoverViewController.m */; };
 		1A720AB71A840730008159AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB61A840730008159AF /* HomeViewController.m */; };
 		1A720ABC1A841169008159AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A720ABB1A841169008159AF /* GLKit.framework */; };
@@ -23,7 +27,6 @@
 		1A720B391A841414008159AF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720B381A841414008159AF /* GameViewController.m */; };
 		1AAACC961A7D7556008C8DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC951A7D7556008C8DD1 /* main.m */; };
 		1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC981A7D7556008C8DD1 /* AppDelegate.m */; };
-		1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */; };
 		1AAACCA41A7D7556008C8DD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAACCA31A7D7556008C8DD1 /* Images.xcassets */; };
 		1AAACCA71A7D7556008C8DD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAACCA51A7D7556008C8DD1 /* LaunchScreen.xib */; };
 		AB5200485669ECBBB7F211AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F34548E9E2740013C41BBE0 /* libPods.a */; };
@@ -31,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSFeatureManager.h; sourceTree = "<group>"; };
-		1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSFeatureManager.m; sourceTree = "<group>"; };
 		1A0943631A82B901007C0CB0 /* MEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMenuViewController.h; sourceTree = "<group>"; };
 		1A0943641A82B901007C0CB0 /* MEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMenuViewController.m; sourceTree = "<group>"; };
 		1A0943661A82B922007C0CB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 		1A09436D1A82C530007C0CB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1A0943701A82C59F007C0CB0 /* BKSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSMapView.h; sourceTree = "<group>"; };
 		1A0943711A82C59F007C0CB0 /* BKSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSMapView.m; sourceTree = "<group>"; };
+		1A252F501A87C4F7006C5276 /* BKSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSCoreDataManager.h; sourceTree = "<group>"; };
+		1A252F511A87C4F7006C5276 /* BKSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSCoreDataManager.m; sourceTree = "<group>"; };
+		1A252F521A87C4F7006C5276 /* IAThreadSafeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAThreadSafeContext.h; sourceTree = "<group>"; };
+		1A252F531A87C4F7006C5276 /* IAThreadSafeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAThreadSafeContext.m; sourceTree = "<group>"; };
+		1A252F541A87C4F7006C5276 /* IAThreadSafeManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAThreadSafeManagedObject.h; sourceTree = "<group>"; };
+		1A252F551A87C4F7006C5276 /* IAThreadSafeManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAThreadSafeManagedObject.m; sourceTree = "<group>"; };
+		1A252F591A87C651006C5276 /* BKSFeatureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSFeatureManager.m; sourceTree = "<group>"; };
+		1A252F5F1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BKSCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-CocoaLumberjack.a"; path = "Pods/build/Debug-iphoneos/libPods-CocoaLumberjack.a"; sourceTree = "<group>"; };
 		1A720AB21A8406FB008159AF /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
 		1A720AB31A8406FB008159AF /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
@@ -57,7 +67,6 @@
 		1AAACC951A7D7556008C8DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AAACC971A7D7556008C8DD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AAACC981A7D7556008C8DD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1AAACC9B1A7D7556008C8DD1 /* layout_practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = layout_practice.xcdatamodel; sourceTree = "<group>"; };
 		1AAACCA31A7D7556008C8DD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AAACCA61A7D7556008C8DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1AAACCB11A7D7556008C8DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,8 +125,10 @@
 		1A09436C1A82BD1E007C0CB0 /* BKS Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1A252F501A87C4F7006C5276 /* BKSCoreDataManager.h */,
+				1A252F511A87C4F7006C5276 /* BKSCoreDataManager.m */,
 				1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */,
-				1A070E9A1A8018DE0051CB39 /* BKSFeatureManager.m */,
+				1A252F591A87C651006C5276 /* BKSFeatureManager.m */,
 			);
 			name = "BKS Managers";
 			sourceTree = "<group>";
@@ -129,6 +140,18 @@
 				1A0943711A82C59F007C0CB0 /* BKSMapView.m */,
 			);
 			name = "BKS View";
+			sourceTree = "<group>";
+		};
+		1A252F461A87C39F006C5276 /* BKSCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1A252F521A87C4F7006C5276 /* IAThreadSafeContext.h */,
+				1A252F531A87C4F7006C5276 /* IAThreadSafeContext.m */,
+				1A252F541A87C4F7006C5276 /* IAThreadSafeManagedObject.h */,
+				1A252F551A87C4F7006C5276 /* IAThreadSafeManagedObject.m */,
+				1A252F5E1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld */,
+			);
+			name = BKSCoreData;
 			sourceTree = "<group>";
 		};
 		1A720B3A1A84141B008159AF /* BKS OpenGL */ = {
@@ -170,6 +193,7 @@
 		1AAACC921A7D7556008C8DD1 /* BKS base project */ = {
 			isa = PBXGroup;
 			children = (
+				1A252F461A87C39F006C5276 /* BKSCoreData */,
 				1A720B3A1A84141B008159AF /* BKS OpenGL */,
 				1A09436F1A82C539007C0CB0 /* BKS View */,
 				1A09436C1A82BD1E007C0CB0 /* BKS Managers */,
@@ -179,7 +203,6 @@
 				1A0943661A82B922007C0CB0 /* Main.storyboard */,
 				1AAACCA31A7D7556008C8DD1 /* Images.xcassets */,
 				1AAACCA51A7D7556008C8DD1 /* LaunchScreen.xib */,
-				1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */,
 				1AAACC931A7D7556008C8DD1 /* Supporting Files */,
 			);
 			name = "BKS base project";
@@ -358,12 +381,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A252F5A1A87C651006C5276 /* BKSFeatureManager.m in Sources */,
+				1A252F581A87C4F7006C5276 /* IAThreadSafeManagedObject.m in Sources */,
 				1A720B391A841414008159AF /* GameViewController.m in Sources */,
-				1AAACC9C1A7D7556008C8DD1 /* layout_practice.xcdatamodeld in Sources */,
-				1A070E9B1A8018DE0051CB39 /* BKSFeatureManager.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
 				1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */,
 				1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */,
+				1A252F601A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld in Sources */,
+				1A252F571A87C4F7006C5276 /* IAThreadSafeContext.m in Sources */,
+				1A252F561A87C4F7006C5276 /* BKSCoreDataManager.m in Sources */,
 				1A720AB71A840730008159AF /* HomeViewController.m in Sources */,
 				1A0943651A82B901007C0CB0 /* MEMenuViewController.m in Sources */,
 				1AAACC961A7D7556008C8DD1 /* main.m in Sources */,
@@ -519,13 +545,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1AAACC9A1A7D7556008C8DD1 /* layout_practice.xcdatamodeld */ = {
+		1A252F5E1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1AAACC9B1A7D7556008C8DD1 /* layout_practice.xcdatamodel */,
+				1A252F5F1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodel */,
 			);
-			currentVersion = 1AAACC9B1A7D7556008C8DD1 /* layout_practice.xcdatamodel */;
-			path = layout_practice.xcdatamodeld;
+			currentVersion = 1A252F5F1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodel */;
+			path = BKSCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

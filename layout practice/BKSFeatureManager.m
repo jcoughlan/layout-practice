@@ -14,7 +14,14 @@
 #import <DDTTYLogger.h>
 #import <DDFileLogger.h>
 #import <CocoaLumberjack.h>
+#import "BKSCoreDataManager.h"
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+#define XCODE_COLORS_ESCAPE @"\033["
+
+#define XCODE_COLORS_RESET_FG  XCODE_COLORS_ESCAPE @"fg;" // Clear any foreground color
+#define XCODE_COLORS_RESET_BG  XCODE_COLORS_ESCAPE @"bg;" // Clear any background color
+#define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"   // Clear any foreground or background color
 
 @implementation BKSFeatureManager
 
@@ -48,6 +55,8 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 -(void) enableCoreData
 {
     usesCoreData = YES;
+    //this will initialize everthing, important to do on main thread
+    [BKSCoreDataManager sharedManager];
 }
 -(void) enableSlidingMenu
 {
@@ -66,7 +75,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
         [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
     else
         [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelNone];
-
+    
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:key];
     
@@ -89,6 +98,10 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 -(void)enableRegularLogging
 {
+    setenv("XcodeColors", "YES", 0);
+
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     //    // Convert from this:
