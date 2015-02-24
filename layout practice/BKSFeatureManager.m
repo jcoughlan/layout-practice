@@ -9,13 +9,8 @@
 #import "BKSFeatureManager.h"
 #import <ZeroPush.h>
 #import <GAI.h>
-#import <DDLog.h>
-#import <DDASLLogger.h>
-#import <DDTTYLogger.h>
-#import <DDFileLogger.h>
-#import <CocoaLumberjack.h>
+#import "DDSLogger.h"
 #import "BKSCoreDataManager.h"
-static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 #define XCODE_COLORS_ESCAPE @"\033["
 

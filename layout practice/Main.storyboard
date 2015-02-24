@@ -98,6 +98,26 @@
                                             <segue destination="aka-hA-JzG" kind="custom" customClass="ECSlidingSegue" id="Ds0-tM-AIh"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Lph-3n-I70" style="IBUITableViewCellStyleDefault" id="UTg-e1-F3c">
+                                        <rect key="frame" x="0.0" y="79" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTg-e1-F3c" id="2Jv-x0-K5Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Camera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lph-3n-I70">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6ku-3x-afA" kind="custom" customClass="ECSlidingSegue" id="ax2-4K-JpY"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -179,8 +199,6 @@
         <!--GL View Controller-->
         <scene sceneID="47p-G3-NL5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lPv-ED-Boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ptk-LM-xpE" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="bHQ-3Z-XGf" userLabel="GL View Controller" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uny-iF-yVl"/>
@@ -200,8 +218,56 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPv-ED-Boz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ptk-LM-xpE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="797" y="2920"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7LQ-a8-t8R">
+            <objects>
+                <navigationController id="6ku-3x-afA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8E-5m-FUz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s6n-6t-okd" kind="relationship" relationship="rootViewController" id="WqE-b9-DYM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieN-bX-GNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="3581"/>
+        </scene>
+        <!--Camera View-->
+        <scene sceneID="kYr-MI-3B1">
+            <objects>
+                <viewController id="s6n-6t-okd" customClass="BKSCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rfR-38-2AI"/>
+                        <viewControllerLayoutGuide type="bottom" id="vf4-Xo-W9O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B9E-y6-R1f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera View" id="jD8-44-Z3P">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="1jH-mw-GW1">
+                            <connections>
+                                <segue destination="G5b-le-Pg4" kind="unwind" unwindAction="unwindToMenuViewController:" id="FlD-Z6-IyD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraView" destination="B9E-y6-R1f" id="IgT-Od-2Br"/>
+                        <outlet property="navigationView" destination="jD8-44-Z3P" id="P8n-f5-O6O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN9-Sn-Hep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="G5b-le-Pg4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="3571"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bks-qE-5VU">

@@ -17,6 +17,10 @@
 		1A252F581A87C4F7006C5276 /* IAThreadSafeManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F551A87C4F7006C5276 /* IAThreadSafeManagedObject.m */; };
 		1A252F5A1A87C651006C5276 /* BKSFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F591A87C651006C5276 /* BKSFeatureManager.m */; };
 		1A252F601A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A252F5E1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld */; };
+		1A690D701A9D1A5D0070B6AC /* BKSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A690D6F1A9D1A5D0070B6AC /* BKSCameraViewController.m */; };
+		1A690D721A9D1B370070B6AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A690D711A9D1B370070B6AC /* AVFoundation.framework */; };
+		1A690D741A9D1B3E0070B6AC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A690D731A9D1B3E0070B6AC /* AVKit.framework */; };
+		1A690D771A9D1E2A0070B6AC /* DDSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A690D761A9D1E2A0070B6AC /* DDSLogger.m */; };
 		1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB31A8406FB008159AF /* PopoverViewController.m */; };
 		1A720AB71A840730008159AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A720AB61A840730008159AF /* HomeViewController.m */; };
 		1A720ABC1A841169008159AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A720ABB1A841169008159AF /* GLKit.framework */; };
@@ -51,6 +55,12 @@
 		1A252F591A87C651006C5276 /* BKSFeatureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSFeatureManager.m; sourceTree = "<group>"; };
 		1A252F5F1A87C75B006C5276 /* BKSCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BKSCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		1A39124D1A82CEF000A3F8DC /* libPods-CocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-CocoaLumberjack.a"; path = "Pods/build/Debug-iphoneos/libPods-CocoaLumberjack.a"; sourceTree = "<group>"; };
+		1A690D6E1A9D1A5D0070B6AC /* BKSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSCameraViewController.h; sourceTree = "<group>"; };
+		1A690D6F1A9D1A5D0070B6AC /* BKSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKSCameraViewController.m; sourceTree = "<group>"; };
+		1A690D711A9D1B370070B6AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1A690D731A9D1B3E0070B6AC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1A690D751A9D1E2A0070B6AC /* DDSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSLogger.h; sourceTree = "<group>"; };
+		1A690D761A9D1E2A0070B6AC /* DDSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSLogger.m; sourceTree = "<group>"; };
 		1A720AB21A8406FB008159AF /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
 		1A720AB31A8406FB008159AF /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 		1A720AB51A840730008159AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -81,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A690D741A9D1B3E0070B6AC /* AVKit.framework in Frameworks */,
+				1A690D721A9D1B370070B6AC /* AVFoundation.framework in Frameworks */,
 				1A720AC31A841320008159AF /* QuartzCore.framework in Frameworks */,
 				1A720AC11A841315008159AF /* OpenGLES.framework in Frameworks */,
 				1A720ABC1A841169008159AF /* GLKit.framework in Frameworks */,
@@ -95,6 +107,8 @@
 		0E664DF59D7825BCAA814756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A690D731A9D1B3E0070B6AC /* AVKit.framework */,
+				1A690D711A9D1B370070B6AC /* AVFoundation.framework */,
 				1A720AC21A841320008159AF /* QuartzCore.framework */,
 				1A720AC01A841315008159AF /* OpenGLES.framework */,
 				1A720ABB1A841169008159AF /* GLKit.framework */,
@@ -118,6 +132,8 @@
 				1A720AB31A8406FB008159AF /* PopoverViewController.m */,
 				1A720AB51A840730008159AF /* HomeViewController.h */,
 				1A720AB61A840730008159AF /* HomeViewController.m */,
+				1A690D6E1A9D1A5D0070B6AC /* BKSCameraViewController.h */,
+				1A690D6F1A9D1A5D0070B6AC /* BKSCameraViewController.m */,
 			);
 			name = "BKS View Controller";
 			sourceTree = "<group>";
@@ -129,6 +145,8 @@
 				1A252F511A87C4F7006C5276 /* BKSCoreDataManager.m */,
 				1A070E991A8018DE0051CB39 /* BKSFeatureManager.h */,
 				1A252F591A87C651006C5276 /* BKSFeatureManager.m */,
+				1A690D751A9D1E2A0070B6AC /* DDSLogger.h */,
+				1A690D761A9D1E2A0070B6AC /* DDSLogger.m */,
 			);
 			name = "BKS Managers";
 			sourceTree = "<group>";
@@ -385,8 +403,10 @@
 				1A252F581A87C4F7006C5276 /* IAThreadSafeManagedObject.m in Sources */,
 				1A720B391A841414008159AF /* GameViewController.m in Sources */,
 				1AAACC991A7D7556008C8DD1 /* AppDelegate.m in Sources */,
+				1A690D701A9D1A5D0070B6AC /* BKSCameraViewController.m in Sources */,
 				1A09436A1A82BCD3007C0CB0 /* MapViewController.m in Sources */,
 				1A720AB41A8406FB008159AF /* PopoverViewController.m in Sources */,
+				1A690D771A9D1E2A0070B6AC /* DDSLogger.m in Sources */,
 				1A252F601A87C75B006C5276 /* BKSCoreDataModel.xcdatamodeld in Sources */,
 				1A252F571A87C4F7006C5276 /* IAThreadSafeContext.m in Sources */,
 				1A252F561A87C4F7006C5276 /* BKSCoreDataManager.m in Sources */,
